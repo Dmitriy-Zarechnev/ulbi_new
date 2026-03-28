@@ -1,7 +1,5 @@
-export enum THEME_ENUM {
-    LIGHT = 'Light',
-    DARK = 'Dark'
-}
+// Types
+import {THEME_ENUM} from "shared/types";
 
 export type TThemeContextProps = {
     theme?: THEME_ENUM;

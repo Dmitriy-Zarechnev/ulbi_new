@@ -3,8 +3,7 @@ import React, {FC, useMemo, useState} from 'react';
 // Utils
 import {LOCAL_STORAGE_THEME_KEY, ThemeContext} from "../lib/ThemeContext";
 // Types
-import {THEME_ENUM} from "../types";
-
+import {THEME_ENUM} from "shared/types";
 
 const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as THEME_ENUM || THEME_ENUM.LIGHT;
 
