@@ -2,8 +2,8 @@
 import {render} from 'react-dom'
 import {BrowserRouter} from "react-router-dom";
 // Components
-import {App} from "./App";
-import {ThemeProvider} from "./theme";
+import {App} from "app/App";
+import {ThemeProvider} from "app/providers/ThemeProvider";
 
 render(
     <BrowserRouter>

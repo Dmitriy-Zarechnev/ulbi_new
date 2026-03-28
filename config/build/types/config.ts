@@ -3,7 +3,8 @@ export type TBuildMode = 'production'| 'development'
 export type TBuildPaths = {
     entry:string;
     build:string;
-    html:string
+    html:string;
+    src:string;
 }
 
 export type TBuildOptions = {
