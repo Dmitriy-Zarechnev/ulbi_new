@@ -1,3 +1,5 @@
+// Modules
+import {useTranslation} from "react-i18next";
 // Components
 import {AppLink} from "shared/ui";
 // Utils
@@ -8,14 +10,13 @@ import {APP_LINK_THEME_ENUM} from "shared/types";
 // Styles
 import styles from './NavBar.module.scss'
 
-
 export const NavBar = ({className}: TNavBarProps) => {
+    const { t } = useTranslation('nav');
+
     return (
         <nav className={classNames(styles.NavBar, {}, [className])}>
-            <div className={styles.Links}>
-                <AppLink to={'/'} theme={APP_LINK_THEME_ENUM.SECONDARY}> Главная</AppLink>
-                <AppLink to={'/about'} theme={APP_LINK_THEME_ENUM.SECONDARY}> О нас</AppLink>
-            </div>
+            <AppLink to={'/'} theme={APP_LINK_THEME_ENUM.SECONDARY}> {t('Главная')}</AppLink>
+            <AppLink to={'/about'} theme={APP_LINK_THEME_ENUM.SECONDARY}>{t('О нас')}</AppLink>
         </nav>
     );
 };

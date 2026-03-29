@@ -4,6 +4,8 @@ import {BrowserRouter} from "react-router-dom";
 // Components
 import {App} from "app/App";
 import {ThemeProvider} from "app/providers/ThemeProvider";
+// Config
+import './shared/config/i18n/i18n'
 
 render(
     <BrowserRouter>
