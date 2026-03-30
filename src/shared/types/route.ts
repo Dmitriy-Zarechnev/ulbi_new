@@ -5,5 +5,5 @@ export enum APP_ROUTES_ENUM {
 
 export const TRoutePath: Record<APP_ROUTES_ENUM, string> = {
     [APP_ROUTES_ENUM.MAIN]: '/',
-    [APP_ROUTES_ENUM.ABOUT ]: '/about',
-}
+    [APP_ROUTES_ENUM.ABOUT]: '/about',
+};

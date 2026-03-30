@@ -1,7 +1,7 @@
 // Modules
-import {Configuration as DevServerConfiguration} from 'webpack-dev-server'
+import { Configuration as DevServerConfiguration } from 'webpack-dev-server';
 // Types
-import {TBuildOptions} from './types/config'
+import { TBuildOptions } from './types/config';
 
 export function buildDevServer(options: TBuildOptions): DevServerConfiguration {
     return {
@@ -9,5 +9,5 @@ export function buildDevServer(options: TBuildOptions): DevServerConfiguration {
         open: true,
         historyApiFallback: true,
         hot: true,
-    }
+    };
 }

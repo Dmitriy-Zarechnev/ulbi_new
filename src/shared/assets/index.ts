@@ -1,4 +1,4 @@
-import DarkIcon from './icons/theme-dark.svg'
-import LightIcon from './icons/theme-light.svg'
+import DarkIcon from './icons/theme-dark.svg';
+import LightIcon from './icons/theme-light.svg';
 
-export {LightIcon, DarkIcon}
+export { LightIcon, DarkIcon };

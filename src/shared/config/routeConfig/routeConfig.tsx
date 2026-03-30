@@ -1,19 +1,19 @@
 // Modules
-import {RouteProps} from "react-router-dom";
+import { RouteProps } from 'react-router-dom';
 // Components
-import {MainPage} from "pages/MainPage";
-import {AboutPage} from "pages/AboutPage";
+import { MainPage } from 'pages/MainPage';
+import { AboutPage } from 'pages/AboutPage';
 // Types
-import {APP_ROUTES_ENUM, TRoutePath} from "shared/types";
+import { APP_ROUTES_ENUM, TRoutePath } from 'shared/types';
 
 export const routeConfig: Record<APP_ROUTES_ENUM, RouteProps> = {
     [APP_ROUTES_ENUM.MAIN]: {
         path: TRoutePath.main,
-        element: <MainPage/>
+        element: <MainPage />,
     },
 
     [APP_ROUTES_ENUM.ABOUT]: {
         path: TRoutePath.about,
-        element: <AboutPage/>
-    }
-}
+        element: <AboutPage />,
+    },
+};

@@ -1,7 +1,7 @@
 // Modules
-import {ResolveOptions} from 'webpack'
+import { ResolveOptions } from 'webpack';
 // Types
-import {TBuildOptions} from "./types/config";
+import { TBuildOptions } from './types/config';
 
 export function buildResolvers(options: TBuildOptions): ResolveOptions {
     return {
@@ -10,5 +10,5 @@ export function buildResolvers(options: TBuildOptions): ResolveOptions {
         modules: [options.paths.src, 'node_modules'],
         mainFiles: ['index'],
         alias: {},
-    }
+    };
 }
