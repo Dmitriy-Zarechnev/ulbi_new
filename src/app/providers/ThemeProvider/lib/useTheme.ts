@@ -10,7 +10,9 @@ export const useTheme = (): TUseThemeResult => {
     const { theme, setTheme } = useContext(ThemeContext);
 
     const toggleTheme = () => {
-        const newTheme = theme === THEME_ENUM.LIGHT ? THEME_ENUM.DARK : THEME_ENUM.LIGHT;
+        const newTheme = theme === THEME_ENUM.LIGHT
+            ? THEME_ENUM.DARK
+            : THEME_ENUM.LIGHT;
 
         setTheme(newTheme);
 

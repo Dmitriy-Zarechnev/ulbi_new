@@ -15,7 +15,7 @@ export const App = () => {
     const { theme } = useTheme();
 
     return (
-        <div className={classNames('App', {}, [theme])}>
+        <div className={classNames('app', {}, [theme])}>
             <Suspense fallback={null}>
                 <NavBar />
                 <div className="content-page">
