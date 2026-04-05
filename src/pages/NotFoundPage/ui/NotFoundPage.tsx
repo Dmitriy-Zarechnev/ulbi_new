@@ -1,3 +1,5 @@
+// Components
+import { Button } from 'shared/ui';
 // Types
 import { useTranslation } from 'react-i18next';
 // Styles
@@ -8,7 +10,10 @@ export const NotFoundPage = () => {
 
     return (
         <div className={styles.NotFoundPage}>
-            {t('Страница не найдена')}
+            <div className={styles.ComponentsWrapper}>
+                {t('Страница не найдена')}
+                <Button type="button" className={styles.HomePageButton}>{t('Вернуться на главную')}</Button>
+            </div>
         </div>
     );
 };
