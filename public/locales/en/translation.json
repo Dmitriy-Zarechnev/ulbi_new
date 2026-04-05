@@ -1,5 +1,8 @@
 {
   "Тестовый пример": "Test example",
   "Страница не найдена": "Page Not Found",
-  "Вернуться на главную": "Return to home page"
+  "Вернуться на главную": "Return to home page",
+  "Произошла непредвиденная ошибка": "Something went wrong",
+  "Обновить страницу": "Refresh page",
+  "Создать ошибку": "Throw error"
 }
