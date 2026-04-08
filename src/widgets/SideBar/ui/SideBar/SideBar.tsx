@@ -2,9 +2,9 @@
 import { useState } from 'react';
 // Components
 import { classNames } from 'shared/lib/utils';
+import { Button } from 'shared/ui';
 import { ThemeSwitcher } from '../../../ThemeSwitcher';
 import { LangSwitcher } from '../../../LangSwitcher';
-// Utils
 // Types
 import { TSideBarProps } from './types';
 // Styles
@@ -18,8 +18,17 @@ export const SideBar = ({ className }:TSideBarProps) => {
     };
 
     return (
-        <div className={classNames(styles.SideBar, { [styles.Collapsed]: collapsed }, [className])}>
-            <button onClick={onToggleHandler} type="button">Toj</button>
+        <div
+            className={classNames(styles.SideBar, { [styles.Collapsed]: collapsed }, [className])}
+            data-testid="sidebar"
+        >
+            <Button
+                data-testid="sidebar-toggle"
+                onClick={onToggleHandler}
+                type="button"
+            >
+                Teststst
+            </Button>
             <div className={styles.Switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher />
