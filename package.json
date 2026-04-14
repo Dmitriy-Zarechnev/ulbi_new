@@ -13,7 +13,10 @@
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
-    "build-storybook": "build-storybook -c ./config/storybook"
+    "build-storybook": "build-storybook -c ./config/storybook",
+    "postinstall": "node scripts/patch-loki-devtools.js",
+    "loki:test": "set NODE_OPTIONS=--dns-result-order=ipv4first && loki test --reactUri http://127.0.0.1:6006",
+    "loki:update": "set NODE_OPTIONS=--dns-result-order=ipv4first && loki update --reactUri http://127.0.0.1:6006"
   },
   "keywords": [],
   "author": "",
@@ -92,5 +95,20 @@
     "react-i18next": "11.15.5",
     "react-redux": "7.2.6",
     "react-router-dom": "6.2.1"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }
