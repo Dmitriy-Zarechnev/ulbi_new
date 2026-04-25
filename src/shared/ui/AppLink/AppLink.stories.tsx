@@ -6,7 +6,7 @@ import { ThemeDecorator } from 'shared/config';
 // Components
 import { AppLink } from './AppLink';
 // Types
-import {APP_LINK_THEME_ENUM, THEME_ENUM} from "shared/types";
+import { APP_LINK_THEME_ENUM, THEME_ENUM } from 'shared/types';
 
 export default {
     title: 'shared/AppLink',

@@ -1,13 +1,13 @@
 // Modules
 import webpack from 'webpack';
 // Loaders
-import {buildCssLoader} from "./loaders/buildCssLoader";
-import {buildSvgLoader} from "./loaders/buildSvgLoader";
+import { buildCssLoader } from './loaders/buildCssLoader';
+import { buildSvgLoader } from './loaders/buildSvgLoader';
 // Types
 import { TBuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: TBuildOptions): webpack.RuleSetRule[] {
-    const svgLoader = buildSvgLoader()
+    const svgLoader = buildSvgLoader();
 
     const babelLoader = {
         test: /\.(js|jsx|tsx|ts)$/,
@@ -30,7 +30,7 @@ export function buildLoaders({ isDev }: TBuildOptions): webpack.RuleSetRule[] {
         },
     };
 
-    const cssLoader = buildCssLoader(isDev)
+    const cssLoader = buildCssLoader(isDev);
 
     const typescriptLoader = {
         test: /\.tsx?$/,

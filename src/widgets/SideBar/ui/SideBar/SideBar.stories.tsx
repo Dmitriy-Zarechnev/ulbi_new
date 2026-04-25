@@ -6,7 +6,7 @@ import { ThemeDecorator } from 'shared/config';
 // Components
 import { SideBar } from './SideBar';
 // Types
-import {THEME_ENUM} from "shared/types";
+import { THEME_ENUM } from 'shared/types';
 
 export default {
     title: 'widget/SideBar',

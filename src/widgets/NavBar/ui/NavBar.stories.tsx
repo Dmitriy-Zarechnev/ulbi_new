@@ -6,7 +6,7 @@ import { ThemeDecorator } from 'shared/config';
 // Components
 import { NavBar } from './NavBar';
 // Types
-import {THEME_ENUM} from "shared/types";
+import { THEME_ENUM } from 'shared/types';
 
 export default {
     title: 'widget/NavBar',

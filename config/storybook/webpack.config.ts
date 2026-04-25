@@ -3,7 +3,7 @@ import webpack, { RuleSetRule } from 'webpack';
 import path from 'path';
 // Loaders
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
-import {buildSvgLoader} from "../build/loaders/buildSvgLoader";
+import { buildSvgLoader } from '../build/loaders/buildSvgLoader';
 // Types
 import { TBuildPaths } from '../build/types/config';
 

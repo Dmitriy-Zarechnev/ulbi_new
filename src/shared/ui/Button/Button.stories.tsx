@@ -6,7 +6,7 @@ import { ThemeDecorator } from '../../config';
 // Components
 import { Button } from './Button';
 // Types
-import {THEME_BUTTON_ENUM, THEME_ENUM} from "../../types";
+import { THEME_BUTTON_ENUM, THEME_ENUM } from '../../types';
 
 export default {
     title: 'shared/Button',

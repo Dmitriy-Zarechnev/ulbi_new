@@ -27,6 +27,7 @@ module.exports = {
             { extensions: ['.js', '.jsx', '.tsx'] },
         ],
         'import/no-unresolved': 'off',
+        'import/order': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn',
         'react/require-default-props': 'off',
@@ -37,12 +38,14 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
+        'storybook/no-renderer-packages': 'off',
         'i18next/no-literal-string': [
-                'error',
+            'error',
             {
                 markupOnly: true,
-                ignoreAttributes: ['data-testid', 'to']
-            }
+                ignoreAttribute: ['data-testid', 'to'],
+            },
+
         ],
         'max-len': ['error', { ignoreComments: true, code: 120 }],
     },
@@ -51,10 +54,10 @@ module.exports = {
     },
     overrides: [
         {
-            files: ["**/src/**/*.test.{ts,tsx}"],
+            files: ['**/src/**/*.test.{ts,tsx}'],
             rules: {
-                'i18next/no-literal-string':'off'
-            }
-        }
-    ]
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };
