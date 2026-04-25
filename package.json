@@ -13,7 +13,7 @@
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
-    "build-storybook": "build-storybook -c ./config/storybook",
+    "storybook:build": "build-storybook -c ./config/storybook",
     "postinstall": "node scripts/patch-loki-devtools.js",
     "loki:test": "set NODE_OPTIONS=--dns-result-order=ipv4first && loki test --reactUri http://127.0.0.1:6006",
     "loki:test:ci": "loki --requireReference --reactUri file:./storybook-static",
