@@ -4,14 +4,14 @@ import { Button } from 'shared/ui';
 // Hooks
 import { useTheme } from 'app/providers/ThemeProvider';
 // Types
-import { THEME_BUTTON_ENUM, THEME_ENUM } from 'shared/types';
+import { BUTTON_THEME_ENUM, THEME_ENUM } from 'shared/types';
 
 export const ThemeSwitcher = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
         <Button
-            theme={THEME_BUTTON_ENUM.CLEAR}
+            theme={BUTTON_THEME_ENUM.CLEAR}
             onClick={toggleTheme}
             type="button"
         >

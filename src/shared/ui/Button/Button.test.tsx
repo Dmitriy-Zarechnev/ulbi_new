@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 // Components
 import { Button } from './Button';
 // Types
-import { THEME_BUTTON_ENUM } from '../../types';
+import { BUTTON_THEME_ENUM } from '../../types';
 
 describe('Button', () => {
     test('Render simple button', () => {
@@ -12,7 +12,7 @@ describe('Button', () => {
     });
 
     test('Render simple button with clear theme', () => {
-        render(<Button theme={THEME_BUTTON_ENUM.CLEAR}>Clear Button</Button>);
-        expect(screen.getByText('Clear Button')).toHaveClass(THEME_BUTTON_ENUM.CLEAR);
+        render(<Button theme={BUTTON_THEME_ENUM.CLEAR}>Clear Button</Button>);
+        expect(screen.getByText('Clear Button')).toHaveClass(BUTTON_THEME_ENUM.CLEAR);
     });
 });

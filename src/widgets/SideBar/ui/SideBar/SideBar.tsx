@@ -7,6 +7,7 @@ import { ThemeSwitcher } from '../../../ThemeSwitcher';
 import { LangSwitcher } from '../../../LangSwitcher';
 // Types
 import { TSideBarProps } from './types';
+import { BUTTON_SIZE_ENUM, BUTTON_THEME_ENUM } from 'shared/types';
 // Styles
 import styles from './SideBar.module.scss';
 
@@ -25,9 +26,12 @@ export const SideBar = ({ className }:TSideBarProps) => {
             <Button
                 data-testid="sidebar-toggle"
                 onClick={onToggleHandler}
-                type="button"
+                className={styles.CollapsedButton}
+                theme={BUTTON_THEME_ENUM.BACKGROUND_INVERTED}
+                square
+                size={BUTTON_SIZE_ENUM.L}
             >
-                1234
+                {collapsed ? '>' : '<'}
             </Button>
             <div className={styles.Switchers}>
                 <ThemeSwitcher />

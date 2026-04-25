@@ -4,7 +4,15 @@ export enum APP_LINK_THEME_ENUM {
     RED = 'Red',
 }
 
-export enum THEME_BUTTON_ENUM {
+export enum BUTTON_THEME_ENUM {
     CLEAR = 'Clear',
     OUTLINE = 'Outline',
+    BACKGROUND = 'Background',
+    BACKGROUND_INVERTED = 'BackgroundInverted',
+}
+
+export enum BUTTON_SIZE_ENUM {
+    M = 'SizeM',
+    L = 'SizeL',
+    XL = 'SizeXL',
 }

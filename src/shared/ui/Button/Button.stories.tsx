@@ -6,7 +6,7 @@ import { ThemeDecorator } from '../../config';
 // Components
 import { Button } from './Button';
 // Types
-import { THEME_BUTTON_ENUM, THEME_ENUM } from '../../types';
+import { BUTTON_SIZE_ENUM, BUTTON_THEME_ENUM, THEME_ENUM } from '../../types';
 
 export default {
     title: 'shared/Button',
@@ -26,19 +26,76 @@ Primary.args = {
 export const Clear = Template.bind({});
 Clear.args = {
     children: 'Text',
-    theme: THEME_BUTTON_ENUM.CLEAR,
+    theme: BUTTON_THEME_ENUM.CLEAR,
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',
-    theme: THEME_BUTTON_ENUM.OUTLINE,
+    theme: BUTTON_THEME_ENUM.OUTLINE,
+};
+
+export const OutlineSizeM = Template.bind({});
+OutlineSizeM.args = {
+    children: 'Text',
+    theme: BUTTON_THEME_ENUM.OUTLINE,
+    size: BUTTON_SIZE_ENUM.M,
+};
+
+export const OutlineSizeL = Template.bind({});
+OutlineSizeL.args = {
+    children: 'Text',
+    theme: BUTTON_THEME_ENUM.OUTLINE,
+    size: BUTTON_SIZE_ENUM.L,
+};
+
+export const OutlineSizeXL = Template.bind({});
+OutlineSizeXL.args = {
+    children: 'Text',
+    theme: BUTTON_THEME_ENUM.OUTLINE,
+    size: BUTTON_SIZE_ENUM.XL,
 };
 
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
     children: 'Text',
-    theme: THEME_BUTTON_ENUM.OUTLINE,
+    theme: BUTTON_THEME_ENUM.OUTLINE,
 };
 
 OutlineDark.decorators = [ThemeDecorator(THEME_ENUM.DARK)];
+
+export const BackgroundTheme = Template.bind({});
+BackgroundTheme.args = {
+    children: 'Text',
+    theme: BUTTON_THEME_ENUM.BACKGROUND,
+};
+
+export const BackgroundInvertedTheme = Template.bind({});
+BackgroundInvertedTheme.args = {
+    children: 'Text',
+    theme: BUTTON_THEME_ENUM.BACKGROUND_INVERTED,
+};
+
+export const SquareButtonM = Template.bind({});
+SquareButtonM.args = {
+    children: '>',
+    theme: BUTTON_THEME_ENUM.BACKGROUND_INVERTED,
+    square: true,
+    size: BUTTON_SIZE_ENUM.M,
+};
+
+export const SquareButtonL = Template.bind({});
+SquareButtonL.args = {
+    children: '>',
+    theme: BUTTON_THEME_ENUM.BACKGROUND_INVERTED,
+    square: true,
+    size: BUTTON_SIZE_ENUM.L,
+};
+
+export const SquareButtonXL = Template.bind({});
+SquareButtonXL.args = {
+    children: '>',
+    theme: BUTTON_THEME_ENUM.BACKGROUND_INVERTED,
+    square: true,
+    size: BUTTON_SIZE_ENUM.XL,
+};

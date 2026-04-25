@@ -5,7 +5,7 @@ import { Button } from 'shared/ui';
 // Utils
 import { classNames } from 'shared/lib/utils';
 // Types
-import { THEME_BUTTON_ENUM } from 'shared/types';
+import { BUTTON_THEME_ENUM } from 'shared/types';
 import { TLangSwitcherProps } from './types';
 // Styles
 import styles from './LangSwitcher.module.scss';
@@ -21,7 +21,7 @@ export const LangSwitcher = ({ className }:TLangSwitcherProps) => {
 
     return (
         <Button
-            theme={THEME_BUTTON_ENUM.CLEAR}
+            theme={BUTTON_THEME_ENUM.CLEAR}
             className={classNames(styles.LangSwitcher, {}, [className])}
             onClick={onToggleLangHandler}
         >
