@@ -27,6 +27,7 @@ export function buildPlugins({ paths, isDev }: TBuildOptions): webpack.WebpackPl
 
     if (isDev) {
         plugins.push(new webpack.HotModuleReplacementPlugin());
+
         plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
     }
 
