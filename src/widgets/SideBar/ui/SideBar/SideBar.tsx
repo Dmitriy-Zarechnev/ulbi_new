@@ -27,7 +27,7 @@ export const SideBar = ({ className }:TSideBarProps) => {
                 onClick={onToggleHandler}
                 type="button"
             >
-                Teststst
+                1234
             </Button>
             <div className={styles.Switchers}>
                 <ThemeSwitcher />
