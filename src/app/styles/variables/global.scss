@@ -10,9 +10,14 @@
     --font-line-xl: 40px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
+    // weight
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --bold-font-weight: 700;
+
     // Размеры
     --navbar-height: 50px;
     --sidebar-width: 300px;
-    --sidebar-width-collapsed: 80px;
+    --sidebar-width-collapsed: 100px;
     --radius-10: 10px;
 }

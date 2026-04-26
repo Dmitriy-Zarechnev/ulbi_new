@@ -2,7 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { Suspense } from 'react';
 // Config
-import { routeConfig } from 'shared/config';
+import { routeConfig } from 'shared/config/routeConfig/routeConfig';
 // Components
 import { PageLoader } from 'widgets/PageLoader';
 

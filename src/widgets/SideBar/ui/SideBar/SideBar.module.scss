@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     gap: 16px;
 }
@@ -25,4 +25,36 @@
     position: absolute;
     bottom: 32px;
     right: -32px;
+}
+
+.CollapsedSwitchers {
+    flex-direction: column;
+}
+
+.NavItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.NavItem {
+    font-size: var(--font-size-l);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.Icon {
+    fill: var(--inverted-primary-color);
+    width: 32px;
+    height: 32px;
+}
+
+.CollapsedNavLink {
+    display: none;
 }

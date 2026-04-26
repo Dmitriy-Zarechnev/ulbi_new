@@ -21,7 +21,7 @@ export const LangSwitcher = ({ className }:TLangSwitcherProps) => {
 
     return (
         <Button
-            theme={BUTTON_THEME_ENUM.CLEAR}
+            theme={BUTTON_THEME_ENUM.BACKGROUND_INVERTED}
             className={classNames(styles.LangSwitcher, {}, [className])}
             onClick={onToggleLangHandler}
         >

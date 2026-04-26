@@ -16,7 +16,6 @@ export const NavBar = ({ className }: TNavBarProps) => {
     return (
         <nav className={classNames(styles.NavBar, {}, [className])}>
             <AppLink to="/" theme={APP_LINK_THEME_ENUM.SECONDARY}>
-                {' '}
                 {t('Главная')}
             </AppLink>
             <AppLink to="/about" theme={APP_LINK_THEME_ENUM.SECONDARY}>{t('О нас')}</AppLink>
