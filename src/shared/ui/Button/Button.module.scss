@@ -4,11 +4,16 @@
     padding: 10px;
 }
 
-.Clear {
+.Clear,
+.ClearInverted {
     padding: 0;
     border: none;
     background: none;
     outline: none;
+}
+
+.ClearInverted {
+    color: var(--inverted-primary-color);
 }
 
 .Outline {

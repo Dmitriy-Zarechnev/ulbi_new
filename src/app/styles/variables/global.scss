@@ -10,14 +10,28 @@
     --font-line-xl: 40px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
-    // weight
+    // font-weight
     --regular-font-weight: 400;
     --medium-font-weight: 500;
     --bold-font-weight: 700;
 
-    // Размеры
+    // sizes
     --navbar-height: 50px;
     --sidebar-width: 300px;
     --sidebar-width-collapsed: 100px;
+
+    // border-radius
     --radius-10: 10px;
+    --radius-12: 12px;
+
+    // z-index
+    --negative-z-index: -1;
+    --zero-z-index: 0;
+    --ten-z-index: 10;
+
+    // colors
+    --overlay-color: rgb(0 0 0 / 60%);
+
+    // transition time
+    --regular-transition-time: 0.3s;
 }

@@ -8,8 +8,6 @@ import { classNames } from 'shared/lib/utils';
 import { useTheme } from './providers/ThemeProvider';
 // Utils
 import { AppRouter } from './providers/router';
-// Styles
-import './styles/index.scss';
 
 export const App = () => {
     const { theme } = useTheme();

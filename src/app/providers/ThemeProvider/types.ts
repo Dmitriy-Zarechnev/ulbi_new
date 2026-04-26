@@ -10,3 +10,7 @@ export type TUseThemeResult = {
     toggleTheme: () => void;
     theme:THEME_ENUM
 }
+
+export type TThemeProviderProps ={
+    initialTheme?:THEME_ENUM
+}

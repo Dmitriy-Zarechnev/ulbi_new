@@ -6,6 +6,7 @@ export enum APP_LINK_THEME_ENUM {
 
 export enum BUTTON_THEME_ENUM {
     CLEAR = 'Clear',
+    CLEAR_INVERTED = 'ClearInverted',
     OUTLINE = 'Outline',
     BACKGROUND = 'Background',
     BACKGROUND_INVERTED = 'BackgroundInverted',

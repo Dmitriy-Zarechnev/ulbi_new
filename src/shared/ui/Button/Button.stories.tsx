@@ -29,6 +29,12 @@ Clear.args = {
     theme: BUTTON_THEME_ENUM.CLEAR,
 };
 
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
+    children: 'Text',
+    theme: BUTTON_THEME_ENUM.CLEAR_INVERTED,
+};
+
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',

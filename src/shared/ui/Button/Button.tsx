@@ -4,9 +4,9 @@ import { FC } from 'react';
 import { classNames } from 'shared/lib/utils';
 // Types
 import { TButtonProps } from './types';
+import { BUTTON_SIZE_ENUM } from 'shared/types';
 // Styles
 import styles from './Button.module.scss';
-import { BUTTON_SIZE_ENUM } from 'shared/types';
 
 export const Button:FC<TButtonProps> = ({
     className, children, theme, size = BUTTON_SIZE_ENUM.M, square, ...rest
